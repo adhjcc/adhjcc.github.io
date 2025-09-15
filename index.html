@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语音生成论文 Demo</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .authors {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .abstract {
+      background-color: #f9f9f9;
+      border-left: 4px solid #ccc;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    audio {
+      display: block;
+      margin: 10px 0 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>语音生成论文 Demo 页面</h1>
+  <p class="authors">作者：张三、李四</p>
+  <p class="authors">单位：某某大学 · 人工智能实验室</p>
+</header>
+
+<section class="abstract">
+  <h2>摘要</h2>
+  <p>
+    本研究提出了一种高效的语音生成模型，在保证音质的同时显著提升了推理速度。
+    本页面展示了同一文本在不同模型下的合成效果，以及相应的实验对比结果。
+  </p>
+</section>
+
+<section>
+  <h2>语音 Demo</h2>
+  <p><strong>测试文本：</strong>“欢迎来到我们的语音生成论文演示页面。”</p>
+
+  <h3>Baseline 模型</h3>
+  <audio controls>
+    <source src="audio/baseline.wav" type="audio/wav">
+    你的浏览器不支持音频播放。
+  </audio>
+
+  <h3>改进模型 A</h3>
+  <audio controls>
+    <source src="audio/modelA.wav" type="audio/wav">
+    你的浏览器不支持音频播放。
+  </audio>
+
+  <h3>改进模型 B</h3>
+  <audio controls>
+    <source src="audio/modelB.wav" type="audio/wav">
+    你的浏览器不支持音频播放。
+  </audio>
+</section>
+
+<section>
+  <h2>实验结果</h2>
+
+  <h3>表 1：模型性能对比</h3>
+  <table>
+    <tr>
+      <th>模型</th>
+      <th>参数量 (M)</th>
+      <th>RTF (↓)</th>
+      <th>内存占用 (MB)</th>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td>120</td>
+      <td>0.95</td>
+      <td>2048</td>
+    </tr>
+    <tr>
+      <td>模型 A</td>
+      <td>85</td>
+      <td>0.42</td>
+      <td>1024</td>
+    </tr>
+    <tr>
+      <td>模型 B</td>
+      <td>60</td>
+      <td>0.30</td>
+      <td>896</td>
+    </tr>
+  </table>
+
+  <h3>表 2：主观评价 (MOS)</h3>
+  <table>
+    <tr>
+      <th>模型</th>
+      <th>自然度 (↑)</th>
+      <th>清晰度 (↑)</th>
+      <th>整体分数 (↑)</th>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td>3.8</td>
+      <td>4.0</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>模型 A</td>
+      <td>4.3</td>
+      <td>4.5</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>模型 B</td>
+      <td>4.5</td>
+      <td>4.6</td>
+      <td>4.6</td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  &copy; 2025 张三。所有权利保留。
+</footer>
+
+</body>
+</html>
